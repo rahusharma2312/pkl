@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1Ds2RRWVGkoONkcAGuCjjS0heHaM5mLYz
 """
 
-pip install transformers torch datasets flask
-
 import random
 import json
 
@@ -574,11 +572,10 @@ val_dataset.set_format(type="torch", columns=["input_ids", "attention_mask", "bo
 print("Sample from Train Dataset:", train_dataset[0])
 print("Sample from Validation Dataset:", val_dataset[0])
 
-!pip install huggingface_hub
+
 from huggingface_hub import notebook_login
 notebook_login()
 
-!pip install transformers datasets
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -621,7 +618,6 @@ print("Training Data Size:", len(train_data))
 print("Validation Data Size:", len(val_data))
 
 # Install necessary libraries (if not already installed)
-!pip install transformers datasets
 
 # Import necessary libraries
 import json
@@ -718,7 +714,6 @@ response = chatbot(f"{user_input}{special_token}", max_length=50, num_return_seq
 print(response[0]["generated_text"])
 
 # Install necessary libraries (if not already installed)
-!pip install transformers datasets
 
 # Import necessary libraries
 import json
@@ -812,7 +807,6 @@ response = chatbot(f"{user_input}{special_token}", max_length=50, num_return_seq
 print(response[0]["generated_text"])
 
 # This code snippet is to create GUI interface for interaction with the
-!pip install streamlit
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -840,7 +834,6 @@ if st.button("Generate Response"):
     else:
         st.write("Please enter a message.")
 
-!pip install streamlit
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
@@ -875,8 +868,6 @@ if st.button("Generate Response"):
         st.write("Please enter a message.")
 
 !streamlit run app.py
-
-!pip install streamlit pyngrok
 
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -1084,8 +1075,6 @@ with open(file_path, "w") as f:
     json.dump(data, f, indent=2)
 
 print(f"Dataset saved to {file_path}")
-
-!pip install transformers datasets
 
 import datasets
 import transformers
@@ -1325,8 +1314,6 @@ while True:
 #         st.write("Please enter a message.")
 
 !streamlit run app.py
-
-pip install streamlit transformers
 
 !mkdir chatbot_app
 !cd chatbot_app
