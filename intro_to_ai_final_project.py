@@ -1405,6 +1405,6 @@ st.sidebar.text("Developed with ❤️ using Streamlit and Transformers")
 #!git init
 #!git add .
 #!git commit -m "Initial commit"
-3!git branch -M main
+#!git branch -M main
 #!git remote add origin <https://github.com/rahusharma2312/pkl>
 #!git push -u origin main
