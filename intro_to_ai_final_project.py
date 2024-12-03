@@ -1317,7 +1317,7 @@ while True:
 
 #!streamlit run app.py
 
-pip install streamlit transformers
+#pip install streamlit transformers
 
 #!mkdir chatbot_app
 #!cd chatbot_app
