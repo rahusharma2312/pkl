@@ -713,7 +713,6 @@ response = chatbot(f"{user_input}{special_token}", max_length=50, num_return_seq
 print(response[0]["generated_text"])
 
 # Install necessary libraries (if not already installed)
-!pip install transformers datasets
 
 # Import necessary libraries
 import json
