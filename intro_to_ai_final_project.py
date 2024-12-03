@@ -867,7 +867,7 @@ if st.button("Generate Response"):
         st.write("Please enter a message.")
 
 
-!pip install streamlit pyngrok
+#!pip install streamlit pyngrok
 
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -1076,7 +1076,7 @@ with open(file_path, "w") as f:
 
 print(f"Dataset saved to {file_path}")
 
-!pip install transformers datasets
+#!pip install transformers datasets
 
 import datasets
 import transformers
