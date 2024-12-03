@@ -895,7 +895,7 @@ if st.button("Generate Response"):
 
 ls
 
-!ngrok config add-authtoken YOUR_AUTHTOKEN
+#!ngrok config add-authtoken YOUR_AUTHTOKEN
 
 from google.colab import drive
 drive.mount('/content/drive')
@@ -1002,15 +1002,15 @@ print("Streamlit app saved as app.py")
 from pyngrok import ngrok
 
 # Start Streamlit in the background
-!streamlit run /content/app.py &
+#!streamlit run /content/app.py &
 
 # Expose the Streamlit app via ngrok
 public_url = ngrok.connect(8501)
 print(f"Streamlit App is available at: {public_url}")
 
-!streamlit run app.py
+#!streamlit run app.py
 
-!streamlit run app.py
+#!streamlit run app.py
 
 import json
 import random
@@ -1315,12 +1315,12 @@ while True:
 #     else:
 #         st.write("Please enter a message.")
 
-!streamlit run app.py
+#!streamlit run app.py
 
 pip install streamlit transformers
 
-!mkdir chatbot_app
-!cd chatbot_app
+#!mkdir chatbot_app
+#!cd chatbot_app
 
 from google.colab import drive
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -1400,11 +1400,11 @@ if st.button("Get Response"):
 # Footer
 st.sidebar.text("Developed with ❤️ using Streamlit and Transformers")
 
-!streamlit run app.py
+#!streamlit run app.py
 
-!git init
-!git add .
-!git commit -m "Initial commit"
-!git branch -M main
-!git remote add origin <https://github.com/rahusharma2312/pkl>
-!git push -u origin main
+#!git init
+#!git add .
+#!git commit -m "Initial commit"
+3!git branch -M main
+#!git remote add origin <https://github.com/rahusharma2312/pkl>
+#!git push -u origin main
