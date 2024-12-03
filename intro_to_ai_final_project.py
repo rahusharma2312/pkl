@@ -806,7 +806,6 @@ response = chatbot(f"{user_input}{special_token}", max_length=50, num_return_seq
 print(response[0]["generated_text"])
 
 # This code snippet is to create GUI interface for interaction with the
-!pip install streamlit
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
