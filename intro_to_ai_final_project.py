@@ -833,7 +833,6 @@ if st.button("Generate Response"):
     else:
         st.write("Please enter a message.")
 
-!pip install streamlit
 import streamlit as st
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
