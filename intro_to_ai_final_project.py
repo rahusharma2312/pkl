@@ -617,7 +617,6 @@ print("Training Data Size:", len(train_data))
 print("Validation Data Size:", len(val_data))
 
 # Install necessary libraries (if not already installed)
-!pip install transformers datasets
 
 # Import necessary libraries
 import json
