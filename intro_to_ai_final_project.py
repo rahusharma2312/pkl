@@ -866,7 +866,6 @@ if st.button("Generate Response"):
     else:
         st.write("Please enter a message.")
 
-!streamlit run app.py
 
 !pip install streamlit pyngrok
 
