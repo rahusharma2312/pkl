@@ -575,7 +575,6 @@ print("Sample from Validation Dataset:", val_dataset[0])
 from huggingface_hub import notebook_login
 notebook_login()
 
-!pip install transformers datasets
 
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
