@@ -1,5 +1,7 @@
 streamlit==1.25.0
 transformers==4.34.0
 torch==2.2.0
-datasets>=2.15.0
+datasets==2.14.5
 flask==2.3.3
+tokenizers==0.13.3
+huggingface-hub==0.17.0
