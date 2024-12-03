@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1Ds2RRWVGkoONkcAGuCjjS0heHaM5mLYz
 """
 
-pip install transformers torch datasets flask
-
 import random
 import json
 
